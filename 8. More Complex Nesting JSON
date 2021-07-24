@@ -1,0 +1,23 @@
+var person = {
+  "Name": "Joe",
+  "Last Name": "Miller",
+  "Address": {
+    "Street": 47,
+    "City": "Islamabad"
+  },
+  "Hobbies": [
+    "doing stuff",
+    "dreaming"
+  ],
+  // Car have object and two arrays
+  "Cars": [{"Model": "Toyota Corolla", "year": 2018 },
+          {"Model": "Honda City", "year": 2015 }]
+};
+console.log(person.Hobbies);
+person.Hobbies[1] = "Swimming";
+console.log(person.Hobbies);
+person.Cars[0].Model = "Civic";
+console.log(person);
+
+
+https://replit.com/@MujtabaAbid/07J-More-Complex-Nesting-JSON#index.js
