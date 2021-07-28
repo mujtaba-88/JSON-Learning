@@ -1,0 +1,28 @@
+// https://replit.com/@MujtabaAbid/010J-Back-to-JavaScript#index.js
+
+var person = {
+  "Name": "Joe",
+  "Last Name": "Milan",
+  "car1": "Mustang",
+  "car2": "Suzuki"
+}
+
+console.log(person.Name);
+// It will create a error.
+//console.log(person.Last Name);
+// You need to use bracket to call last name.
+console.log(person['Last Name']);
+
+let cnt = 1;
+console.log(person["car" + cnt]);
+
+var str = "car2";
+console.log(person[str]);
+
+let str1 = "car";
+
+console.log(person[str1 + cnt]);
+cnt++;
+console.log(person[str1 + cnt]);
+
+
