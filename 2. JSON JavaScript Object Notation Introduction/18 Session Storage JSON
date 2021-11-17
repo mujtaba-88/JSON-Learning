@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- A contact form that can save the value in JSON -->
+<form id = "myForm">
+    <input type = "text" name = "first" value = "Mujtaba"><br>
+    <input type = "text" name = "last" value = "Abid"><br>
+    <input type = "text" name = "company" value = "Discoveryvip"><br>
+    <input type="submit" value="submit">
+</form>
+
+<script type = "text/javascript">
+var myForm = document.getElementById('myForm');
+myForm.addEventListener('submit', function(e){
+e.preventDefault(); // When a submit button is click default will not happen.
+var data = formData(myForm);
+console.log(data);
+});
+
+
+function formData(form){
+            var el = form.querySelectorAll('input[type="text"]');
+            var myData = {}; //Here we will hold our javascript object here coming from input type.
+            for(var x=0; x < el.length; x++ ){
+                var name = el[x].name;
+                var value = el[x].value;
+                myData[name ] = value // Populating myData with name and value.
+            }
+        return myData
+        }
+</script>
